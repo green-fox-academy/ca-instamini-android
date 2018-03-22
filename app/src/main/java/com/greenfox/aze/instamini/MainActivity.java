@@ -26,6 +26,8 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String USERNAME = "username";
+
     SharedPreferences preferences;
     String username;
 
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         preferences = getPreferences(Context.MODE_PRIVATE);
-        username = preferences.getString("username", null);
+        username = preferences.getString(USERNAME, null);
         if (username == null) {
             startActivity(new Intent(MainActivity.this, Login.class));
         }
