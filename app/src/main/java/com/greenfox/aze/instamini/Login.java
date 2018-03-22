@@ -46,6 +46,7 @@ public class Login extends AppCompatActivity {
                         if ("ok".equals(response.body().status)) {
                             SharedPreferences.Editor editor = preferences.edit();
                             editor.putString(MainActivity.USERNAME, username.getText().toString());
+                            editor.putInt(MainActivity.USERID, response.body().user_id);
                             editor.apply();
                             finish();
                         }

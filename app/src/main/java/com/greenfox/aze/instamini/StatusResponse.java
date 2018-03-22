@@ -6,4 +6,5 @@ package com.greenfox.aze.instamini;
 
 class StatusResponse {
     public String status;
+    public int user_id;
 }

@@ -27,6 +27,7 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity {
 
     public static final String USERNAME = "username";
+    public static final String USERID = "user_id";
 
     SharedPreferences preferences;
     String username;
